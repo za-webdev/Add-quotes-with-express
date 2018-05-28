@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>all quotes</title>
+</head>
+<body>
+	<h1>Here are some Wsome quotes!</h1>
+	<% for (var x in users){%>
+		<p>Quote: <%=users[x].quote%></p>
+		<p>Name: <%=users[x].name%> at <%=users[x].createdAt%></p>
+
+		<hr>
+	<%}%>
+
+		<a href="/">GO Back</a>
+</body>
+</html>
